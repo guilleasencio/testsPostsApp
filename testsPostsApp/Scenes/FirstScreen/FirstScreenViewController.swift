@@ -42,7 +42,7 @@ class FirstScreenViewController: UIViewController, FirstScreenDisplayLogic {
     viewController.interactor = interactor
     viewController.router = router
     interactor.presenter = presenter
-    interactor.postsRepository = Managers.network
+    interactor.postsRepository = Repositories.posts
     presenter.viewController = viewController
     router.viewController = viewController
     router.dataStore = interactor
