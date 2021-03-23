@@ -1,0 +1,7 @@
+input_dir: technicalTestRakuten
+output_dir: technicalTestRakuten/Constants
+xcassets:
+  - inputs: Resources/Colors.xcassets
+    outputs:
+      - templatePath: swiftgen/colors.stencil
+        output: Colors.swift

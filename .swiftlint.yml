@@ -1,0 +1,67 @@
+# Check https://github.com/realm/SwiftLint#configuration for custom configurations
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+
+disabled_rules:
+  - function_body_length
+  - inclusive_language
+
+# rule identifiers to opt in
+opt_in_rules:
+  - closure_end_indentation
+  - closure_spacing
+  - conditional_returns_on_newline
+  - empty_count
+  - file_header
+  - fatal_error_message
+  - first_where
+  - force_unwrapping
+  - implicit_return
+  - implicitly_unwrapped_optional
+  - operator_usage_whitespace
+  - vertical_parameter_alignment
+  - weak_delegate
+  - vertical_parameter_alignment_on_call
+
+# special configuration for rules
+colon:
+  flexible_right_spacing: false
+  apply_to_dictionaries: true
+
+cyclomatic_complexity:
+  warning: 10
+  error: 20
+  ignores_case_statements: true
+
+file_length:
+  warning: 500
+  error: 1000
+
+function_parameter_count:
+  warning: 5
+  error: 8
+
+large_tuple:
+  warning: 2
+  error: 3
+
+implicitly_unwrapped_optional:
+  mode: allExceptIBOutlets
+
+identifier_name:
+  min_length:
+    error: 3
+  excluded:
+    - i
+    - j
+    - k
+
+line_length:
+  warning: 120
+  error: 200
+  ignores_urls: true
+  ignores_function_declarations: false
+  ignores_comments: true
+
+nesting:
+  type_level: 3
