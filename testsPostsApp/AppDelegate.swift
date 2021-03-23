@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
+    // We only want to reset the internal db for development
     #if DEBUG
     try? Managers.database.reset()
     #endif

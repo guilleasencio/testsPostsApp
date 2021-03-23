@@ -41,6 +41,14 @@
 		463A7A0B260A478F0099F422 /* PostObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A7A0A260A478F0099F422 /* PostObject.swift */; };
 		463A7A0F260A48F80099F422 /* DatabaseObjectConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A7A0E260A48F80099F422 /* DatabaseObjectConvertible.swift */; };
 		463A7A20260A51E90099F422 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A7A1F260A51E90099F422 /* Repositories.swift */; };
+		463A7A2D260A5AFD0099F422 /* UserEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A7A2C260A5AFD0099F422 /* UserEntities.swift */; };
+		463A7A31260A5B9C0099F422 /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A7A30260A5B9C0099F422 /* UserObject.swift */; };
+		463A7A36260A5C580099F422 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A7A35260A5C580099F422 /* UserRepository.swift */; };
+		463A7A3A260A5C6A0099F422 /* UserDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A7A39260A5C6A0099F422 /* UserDataModels.swift */; };
+		463A7A41260A5DEF0099F422 /* CommentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A7A40260A5DEF0099F422 /* CommentRepository.swift */; };
+		463A7A45260A5E080099F422 /* CommentDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A7A44260A5E080099F422 /* CommentDataModels.swift */; };
+		463A7A49260A5E1C0099F422 /* CommentObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A7A48260A5E1C0099F422 /* CommentObject.swift */; };
+		463A7A4D260A5E2D0099F422 /* CommentEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A7A4C260A5E2D0099F422 /* CommentEntities.swift */; };
 		5F0EB470B5C8C5214F7B8BD6 /* Pods_testsPostsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA59626127077F911F522395 /* Pods_testsPostsAppTests.framework */; };
 		971E61E752701703F4C15EF0 /* Pods_testsPostsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467F8786A4F9DA15F9DF6369 /* Pods_testsPostsApp.framework */; };
 /* End PBXBuildFile section */
@@ -96,6 +104,14 @@
 		463A7A0A260A478F0099F422 /* PostObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostObject.swift; sourceTree = "<group>"; };
 		463A7A0E260A48F80099F422 /* DatabaseObjectConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseObjectConvertible.swift; sourceTree = "<group>"; };
 		463A7A1F260A51E90099F422 /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		463A7A2C260A5AFD0099F422 /* UserEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntities.swift; sourceTree = "<group>"; };
+		463A7A30260A5B9C0099F422 /* UserObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserObject.swift; sourceTree = "<group>"; };
+		463A7A35260A5C580099F422 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		463A7A39260A5C6A0099F422 /* UserDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModels.swift; sourceTree = "<group>"; };
+		463A7A40260A5DEF0099F422 /* CommentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRepository.swift; sourceTree = "<group>"; };
+		463A7A44260A5E080099F422 /* CommentDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentDataModels.swift; sourceTree = "<group>"; };
+		463A7A48260A5E1C0099F422 /* CommentObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentObject.swift; sourceTree = "<group>"; };
+		463A7A4C260A5E2D0099F422 /* CommentEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentEntities.swift; sourceTree = "<group>"; };
 		467F8786A4F9DA15F9DF6369 /* Pods_testsPostsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testsPostsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73A887E3832BEC590BE9485C /* Pods-testsPostsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testsPostsApp.release.xcconfig"; path = "Target Support Files/Pods-testsPostsApp/Pods-testsPostsApp.release.xcconfig"; sourceTree = "<group>"; };
 		E257F2D198C82788433868DB /* Pods-testsPostsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testsPostsAppTests.debug.xcconfig"; path = "Target Support Files/Pods-testsPostsAppTests/Pods-testsPostsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -308,7 +324,9 @@
 		463A79E42609F7370099F422 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				463A7A4C260A5E2D0099F422 /* CommentEntities.swift */,
 				463A79E52609F74F0099F422 /* PostEntities.swift */,
+				463A7A2C260A5AFD0099F422 /* UserEntities.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -316,7 +334,9 @@
 		463A79EB2609F7EF0099F422 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				463A7A3F260A5DC00099F422 /* Comment */,
 				463A79EC2609F8050099F422 /* Post */,
+				463A7A34260A5C400099F422 /* User */,
 				463A7A1F260A51E90099F422 /* Repositories.swift */,
 			);
 			path = Repositories;
@@ -345,9 +365,29 @@
 		463A7A09260A47770099F422 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				463A7A48260A5E1C0099F422 /* CommentObject.swift */,
 				463A7A0A260A478F0099F422 /* PostObject.swift */,
+				463A7A30260A5B9C0099F422 /* UserObject.swift */,
 			);
 			path = Objects;
+			sourceTree = "<group>";
+		};
+		463A7A34260A5C400099F422 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				463A7A39260A5C6A0099F422 /* UserDataModels.swift */,
+				463A7A35260A5C580099F422 /* UserRepository.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		463A7A3F260A5DC00099F422 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				463A7A44260A5E080099F422 /* CommentDataModels.swift */,
+				463A7A40260A5DEF0099F422 /* CommentRepository.swift */,
+			);
+			path = Comment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -574,17 +614,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				463A7A0B260A478F0099F422 /* PostObject.swift in Sources */,
+				463A7A31260A5B9C0099F422 /* UserObject.swift in Sources */,
 				46053CCC2609651600A23D8F /* NetworkManager.swift in Sources */,
 				46053CD8260965D100A23D8F /* Colors.swift in Sources */,
 				463A7A02260A2FF90099F422 /* DatabaseManager.swift in Sources */,
 				46053CCD2609651600A23D8F /* NetworkConfig.swift in Sources */,
 				463A79EE2609F81F0099F422 /* PostDataModels.swift in Sources */,
 				463A7A06260A3D820099F422 /* DatabaseError.swift in Sources */,
+				463A7A2D260A5AFD0099F422 /* UserEntities.swift in Sources */,
 				46053CCF2609651600A23D8F /* NetworkResponse.swift in Sources */,
 				463A79BE2609E7020099F422 /* UIColor.swift in Sources */,
+				463A7A36260A5C580099F422 /* UserRepository.swift in Sources */,
 				463A79E62609F74F0099F422 /* PostEntities.swift in Sources */,
 				463A79E12609F3720099F422 /* UITableViewCell.swift in Sources */,
 				463A7A20260A51E90099F422 /* Repositories.swift in Sources */,
+				463A7A45260A5E080099F422 /* CommentDataModels.swift in Sources */,
 				46053CCB2609651600A23D8F /* NetworkError.swift in Sources */,
 				46053CCA2609651600A23D8F /* NetworkEntityParser.swift in Sources */,
 				463A79C72609E9000099F422 /* FirstScreenView.swift in Sources */,
@@ -595,10 +639,14 @@
 				46053C622609570000A23D8F /* AppDelegate.swift in Sources */,
 				463A79D02609EC7B0099F422 /* UIView.swift in Sources */,
 				463A79DD2609F2F20099F422 /* PostTableViewCell.swift in Sources */,
+				463A7A4D260A5E2D0099F422 /* CommentEntities.swift in Sources */,
 				46053CE82609674700A23D8F /* FirstScreenViewController.swift in Sources */,
 				46053CD32609657500A23D8F /* Managers.swift in Sources */,
 				463A7A0F260A48F80099F422 /* DatabaseObjectConvertible.swift in Sources */,
+				463A7A41260A5DEF0099F422 /* CommentRepository.swift in Sources */,
+				463A7A3A260A5C6A0099F422 /* UserDataModels.swift in Sources */,
 				46053CE62609674700A23D8F /* FirstScreenRouter.swift in Sources */,
+				463A7A49260A5E1C0099F422 /* CommentObject.swift in Sources */,
 				463A79F22609F82E0099F422 /* PostRepository.swift in Sources */,
 				463A79D42609ED2A0099F422 /* ScreenLoadErrorView.swift in Sources */,
 				46053CE92609674700A23D8F /* FirstScreenInteractor.swift in Sources */,

@@ -11,5 +11,7 @@ class Repositories {
 
   // MARK: - Properties
 
+  static let comments = CommentRepository()
   static let posts = PostRepository()
+  static let users = UserRepository()
 }
