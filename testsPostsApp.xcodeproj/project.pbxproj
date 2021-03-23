@@ -24,6 +24,18 @@
 		46053CE72609674700A23D8F /* FirstScreenModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46053CE12609674700A23D8F /* FirstScreenModels.swift */; };
 		46053CE82609674700A23D8F /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46053CE22609674700A23D8F /* FirstScreenViewController.swift */; };
 		46053CE92609674700A23D8F /* FirstScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46053CE32609674700A23D8F /* FirstScreenInteractor.swift */; };
+		463A79AF2609E5FB0099F422 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 463A79AE2609E5FB0099F422 /* Colors.xcassets */; };
+		463A79BE2609E7020099F422 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A79BD2609E7020099F422 /* UIColor.swift */; };
+		463A79C32609E7750099F422 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A79C22609E7750099F422 /* Collection.swift */; };
+		463A79C72609E9000099F422 /* FirstScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A79C62609E9000099F422 /* FirstScreenView.swift */; };
+		463A79CC2609EC530099F422 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A79CB2609EC530099F422 /* LoaderView.swift */; };
+		463A79D02609EC7B0099F422 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A79CF2609EC7B0099F422 /* UIView.swift */; };
+		463A79D42609ED2A0099F422 /* ScreenLoadErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A79D32609ED2A0099F422 /* ScreenLoadErrorView.swift */; };
+		463A79DD2609F2F20099F422 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A79DC2609F2F20099F422 /* PostTableViewCell.swift */; };
+		463A79E12609F3720099F422 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A79E02609F3720099F422 /* UITableViewCell.swift */; };
+		463A79E62609F74F0099F422 /* PostEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A79E52609F74F0099F422 /* PostEntities.swift */; };
+		463A79EE2609F81F0099F422 /* PostDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A79ED2609F81F0099F422 /* PostDataModels.swift */; };
+		463A79F22609F82E0099F422 /* PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A79F12609F82E0099F422 /* PostRepository.swift */; };
 		5F0EB470B5C8C5214F7B8BD6 /* Pods_testsPostsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA59626127077F911F522395 /* Pods_testsPostsAppTests.framework */; };
 		971E61E752701703F4C15EF0 /* Pods_testsPostsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467F8786A4F9DA15F9DF6369 /* Pods_testsPostsApp.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +73,19 @@
 		46053CE12609674700A23D8F /* FirstScreenModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenModels.swift; sourceTree = "<group>"; };
 		46053CE22609674700A23D8F /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
 		46053CE32609674700A23D8F /* FirstScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenInteractor.swift; sourceTree = "<group>"; };
+		463A79AE2609E5FB0099F422 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		463A79BD2609E7020099F422 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		463A79C22609E7750099F422 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		463A79C62609E9000099F422 /* FirstScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenView.swift; sourceTree = "<group>"; };
+		463A79CB2609EC530099F422 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		463A79CF2609EC7B0099F422 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		463A79D32609ED2A0099F422 /* ScreenLoadErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenLoadErrorView.swift; sourceTree = "<group>"; };
+		463A79D82609EDA00099F422 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
+		463A79DC2609F2F20099F422 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		463A79E02609F3720099F422 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		463A79E52609F74F0099F422 /* PostEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEntities.swift; sourceTree = "<group>"; };
+		463A79ED2609F81F0099F422 /* PostDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataModels.swift; sourceTree = "<group>"; };
+		463A79F12609F82E0099F422 /* PostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepository.swift; sourceTree = "<group>"; };
 		467F8786A4F9DA15F9DF6369 /* Pods_testsPostsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testsPostsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73A887E3832BEC590BE9485C /* Pods-testsPostsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testsPostsApp.release.xcconfig"; path = "Target Support Files/Pods-testsPostsApp/Pods-testsPostsApp.release.xcconfig"; sourceTree = "<group>"; };
 		E257F2D198C82788433868DB /* Pods-testsPostsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testsPostsAppTests.debug.xcconfig"; path = "Target Support Files/Pods-testsPostsAppTests/Pods-testsPostsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,8 +159,12 @@
 				46053C612609570000A23D8F /* AppDelegate.swift */,
 				46053CBA260964AF00A23D8F /* Config */,
 				46053CD6260965B700A23D8F /* Constants */,
+				463A79E42609F7370099F422 /* Entities */,
+				463A79BB2609E6E10099F422 /* Extensions */,
+				463A79EB2609F7EF0099F422 /* Repositories */,
 				46053CDB2609660600A23D8F /* Resources */,
 				46053CDC260966BC00A23D8F /* Scenes */,
+				463A79CA2609EC260099F422 /* Views */,
 			);
 			path = testsPostsApp;
 			sourceTree = "<group>";
@@ -183,7 +212,9 @@
 		46053CDB2609660600A23D8F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				463A79D72609ED890099F422 /* Fonts */,
 				46053C6A2609570100A23D8F /* Assets.xcassets */,
+				463A79AE2609E5FB0099F422 /* Colors.xcassets */,
 				46053C6C2609570100A23D8F /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
@@ -205,8 +236,87 @@
 				46053CE12609674700A23D8F /* FirstScreenModels.swift */,
 				46053CE22609674700A23D8F /* FirstScreenViewController.swift */,
 				46053CE32609674700A23D8F /* FirstScreenInteractor.swift */,
+				463A79C62609E9000099F422 /* FirstScreenView.swift */,
 			);
 			path = FirstScreen;
+			sourceTree = "<group>";
+		};
+		463A79BB2609E6E10099F422 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				463A79C12609E7630099F422 /* Foundation */,
+				463A79BC2609E6EA0099F422 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		463A79BC2609E6EA0099F422 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				463A79BD2609E7020099F422 /* UIColor.swift */,
+				463A79CF2609EC7B0099F422 /* UIView.swift */,
+				463A79E02609F3720099F422 /* UITableViewCell.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		463A79C12609E7630099F422 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				463A79C22609E7750099F422 /* Collection.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		463A79CA2609EC260099F422 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				463A79DB2609F2D50099F422 /* Cells */,
+				463A79CB2609EC530099F422 /* LoaderView.swift */,
+				463A79D32609ED2A0099F422 /* ScreenLoadErrorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		463A79D72609ED890099F422 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				463A79D82609EDA00099F422 /* SF-Pro.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		463A79DB2609F2D50099F422 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				463A79DC2609F2F20099F422 /* PostTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		463A79E42609F7370099F422 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				463A79E52609F74F0099F422 /* PostEntities.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		463A79EB2609F7EF0099F422 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				463A79EC2609F8050099F422 /* Post */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		463A79EC2609F8050099F422 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				463A79ED2609F81F0099F422 /* PostDataModels.swift */,
+				463A79F12609F82E0099F422 /* PostRepository.swift */,
+			);
+			path = Post;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +405,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				463A79AF2609E5FB0099F422 /* Colors.xcassets in Resources */,
 				46053C6E2609570100A23D8F /* LaunchScreen.storyboard in Resources */,
 				46053C6B2609570100A23D8F /* Assets.xcassets in Resources */,
 			);
@@ -434,17 +545,28 @@
 				46053CCC2609651600A23D8F /* NetworkManager.swift in Sources */,
 				46053CD8260965D100A23D8F /* Colors.swift in Sources */,
 				46053CCD2609651600A23D8F /* NetworkConfig.swift in Sources */,
+				463A79EE2609F81F0099F422 /* PostDataModels.swift in Sources */,
 				46053CCF2609651600A23D8F /* NetworkResponse.swift in Sources */,
+				463A79BE2609E7020099F422 /* UIColor.swift in Sources */,
+				463A79E62609F74F0099F422 /* PostEntities.swift in Sources */,
+				463A79E12609F3720099F422 /* UITableViewCell.swift in Sources */,
 				46053CCB2609651600A23D8F /* NetworkError.swift in Sources */,
 				46053CCA2609651600A23D8F /* NetworkEntityParser.swift in Sources */,
+				463A79C72609E9000099F422 /* FirstScreenView.swift in Sources */,
+				463A79C32609E7750099F422 /* Collection.swift in Sources */,
 				46053CCE2609651600A23D8F /* NetworkRequest.swift in Sources */,
 				46053CE42609674700A23D8F /* FirstScreenPresenter.swift in Sources */,
 				46053CE72609674700A23D8F /* FirstScreenModels.swift in Sources */,
 				46053C622609570000A23D8F /* AppDelegate.swift in Sources */,
+				463A79D02609EC7B0099F422 /* UIView.swift in Sources */,
+				463A79DD2609F2F20099F422 /* PostTableViewCell.swift in Sources */,
 				46053CE82609674700A23D8F /* FirstScreenViewController.swift in Sources */,
 				46053CD32609657500A23D8F /* Managers.swift in Sources */,
 				46053CE62609674700A23D8F /* FirstScreenRouter.swift in Sources */,
+				463A79F22609F82E0099F422 /* PostRepository.swift in Sources */,
+				463A79D42609ED2A0099F422 /* ScreenLoadErrorView.swift in Sources */,
 				46053CE92609674700A23D8F /* FirstScreenInteractor.swift in Sources */,
+				463A79CC2609EC530099F422 /* LoaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

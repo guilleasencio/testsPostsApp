@@ -1,5 +1,5 @@
-input_dir: technicalTestRakuten
-output_dir: technicalTestRakuten/Constants
+input_dir: testsPostsApp
+output_dir: testsPostsApp/Constants
 xcassets:
   - inputs: Resources/Colors.xcassets
     outputs:

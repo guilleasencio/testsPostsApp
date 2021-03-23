@@ -8,7 +8,7 @@
 import UIKit
 
 protocol FirstScreenBusinessLogic {
-  func doSomething(request: FirstScreen.Something.Request)
+  func doLoadData(request: FirstScreen.Data.Request)
 }
 
 protocol FirstScreenDataStore {
@@ -16,14 +16,38 @@ protocol FirstScreenDataStore {
 }
 
 class FirstScreenInteractor: FirstScreenBusinessLogic, FirstScreenDataStore {
+
+  // MARK: - Properties
+
   var presenter: FirstScreenPresentationLogic?
-  // var name: String = ""
+  var postsRepository: PostRepositoryLogic?
 
-  // MARK: Do something
+  private var posts: [PostEntity] = []
 
-  func doSomething(request: FirstScreen.Something.Request) {
+  // MARK: Public
 
-    let response = FirstScreen.Something.Response()
-    presenter?.presentSomething(response: response)
+  func doLoadData(request: FirstScreen.Data.Request) {
+    guard let postsRepository = postsRepository else {
+      return
+    }
+
+    let response = FirstScreen.Data.Response(state: .loading)
+    presenter?.presentData(response: response)
+
+    postsRepository.getPosts { [weak self] result in
+      guard let self = self else {
+        return
+      }
+      let state: FirstScreenState
+      switch result {
+      case .success(let entities):
+        self.posts = entities
+        state = .posts(data: entities)
+      case .failure:
+        state = .error
+      }
+      let response = FirstScreen.Data.Response(state: state)
+      self.presenter?.presentData(response: response)
+    }
   }
 }

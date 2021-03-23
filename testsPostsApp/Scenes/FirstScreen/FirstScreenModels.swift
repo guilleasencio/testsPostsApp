@@ -10,12 +10,44 @@ import UIKit
 enum FirstScreen {
   // MARK: Use cases
 
-  enum Something {
+  enum Data {
     struct Request {
     }
+
+    struct Response {
+      let state: FirstScreenState
+    }
+
+    struct ViewModel {
+      let state: FirstScreenViewState
+    }
+  }
+
+  enum SelectPost {
+    struct Request {
+      let index: Int
+    }
+
     struct Response {
     }
+
     struct ViewModel {
     }
   }
+}
+
+// MARK: - Business models
+
+enum FirstScreenState {
+  case loading
+  case posts(data: [PostEntity])
+  case error
+}
+
+// MARK: - View models
+
+enum FirstScreenViewState {
+  case loading
+  case sucess(cellData: [PostTableViewCellData])
+  case error
 }

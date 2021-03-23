@@ -9,5 +9,5 @@ import Foundation
 
 struct NetworkConfig {
 
-  static let rakutenBaseUrl = "https://gizmo.rakuten.tv"
+  static let baseUrl = "https://jsonplaceholder.typicode.com"
 }

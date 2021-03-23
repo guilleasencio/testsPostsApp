@@ -8,12 +8,17 @@
 import UIKit
 
 protocol FirstScreenDisplayLogic: class {
-  func displaySomething(viewModel: FirstScreen.Something.ViewModel)
+  func displayData(viewModel: FirstScreen.Data.ViewModel)
 }
 
 class FirstScreenViewController: UIViewController, FirstScreenDisplayLogic {
+
+  // MARK: - Properties
+
   var interactor: FirstScreenBusinessLogic?
   var router: (NSObjectProtocol & FirstScreenRoutingLogic & FirstScreenDataPassing)?
+
+  private let sceneView = FirstScreenView()
 
   // MARK: Object lifecycle
 
@@ -37,39 +42,58 @@ class FirstScreenViewController: UIViewController, FirstScreenDisplayLogic {
     viewController.interactor = interactor
     viewController.router = router
     interactor.presenter = presenter
+    interactor.postsRepository = Managers.network
     presenter.viewController = viewController
     router.viewController = viewController
     router.dataStore = interactor
   }
 
-  // MARK: Routing
-
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if let scene = segue.identifier {
-      let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
-      if let router = router, router.responds(to: selector) {
-        router.perform(selector, with: segue)
-      }
-    }
-  }
-
   // MARK: View lifecycle
+
+  override func loadView() {
+    view = sceneView
+  }
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    doSomething()
+    setupNavigationBar()
+    setupComponents()
+    doLoadData()
   }
 
-  // MARK: Do something
+  // MARK: - Private
 
-  // @IBOutlet weak var nameTextField: UITextField!
-
-  func doSomething() {
-    let request = FirstScreen.Something.Request()
-    interactor?.doSomething(request: request)
+  private func setupNavigationBar() {
+    navigationController?.setNavigationBarHidden(true, animated: false)
   }
 
-  func displaySomething(viewModel: FirstScreen.Something.ViewModel) {
-    // nameTextField.text = viewModel.name
+  private func setupComponents() {
+    sceneView.delegate = self
+  }
+
+  // MARK: - Output
+
+  func doLoadData() {
+    let request = FirstScreen.Data.Request()
+    interactor?.doLoadData(request: request)
+  }
+
+  // MARK: - Input
+
+  func displayData(viewModel: FirstScreen.Data.ViewModel) {
+    sceneView.setState(state: viewModel.state)
+  }
+}
+
+// MARK: - FirstScreenViewDelegate
+
+extension FirstScreenViewController: FirstScreenViewDelegate {
+
+  func firstScreenViewDidTapCell(_ view: FirstScreenView, index: Int) {
+    // TODO
+  }
+
+  func firstScreenViewDidTapRetryButton(_ view: FirstScreenView) {
+    doLoadData()
   }
 }

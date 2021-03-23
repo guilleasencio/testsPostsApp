@@ -8,16 +8,36 @@
 import UIKit
 
 protocol FirstScreenPresentationLogic {
-  func presentSomething(response: FirstScreen.Something.Response)
+  func presentData(response: FirstScreen.Data.Response)
 }
 
 class FirstScreenPresenter: FirstScreenPresentationLogic {
+
+  // MARK: - Properties
+
   weak var viewController: FirstScreenDisplayLogic?
 
-  // MARK: Do something
+  // MARK: Public
 
-  func presentSomething(response: FirstScreen.Something.Response) {
-    let viewModel = FirstScreen.Something.ViewModel()
-    viewController?.displaySomething(viewModel: viewModel)
+  func presentData(response: FirstScreen.Data.Response) {
+    let state: FirstScreenViewState
+    switch response.state {
+    case .loading:
+      state = .loading
+    case .posts(let data):
+      state = .sucess(cellData: createTableData(data: data))
+    case .error:
+      state = .error
+    }
+    let viewModel = FirstScreen.Data.ViewModel(state: state)
+    viewController?.displayData(viewModel: viewModel)
+  }
+
+  private func createTableData(data: [PostEntity]) -> [PostTableViewCellData] {
+    data.map({ createTableCellData(data: $0) })
+  }
+
+  private func createTableCellData(data: PostEntity) -> PostTableViewCellData {
+    PostTableViewCellData(title: data.title, body: data.body)
   }
 }
