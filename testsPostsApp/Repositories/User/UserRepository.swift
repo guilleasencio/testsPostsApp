@@ -61,15 +61,6 @@ class UserRepository: UserRepositoryLogic {
     }
   }
 
-  func getUserById(userId: Int, completion: @escaping(UserEntity?) -> Void) {
-    guard let users = try? Managers.database.get(UserObject.self,
-                                                 filter: NSPredicate(format: "id == %@", userId)) else {
-      completion(nil)
-      return
-    }
-    completion(users[safe: 0]?.convertToEntity())
-  }
-
   // MARK: - Private
 
   private func getUsersFromDatabase() -> [UserEntity]? {

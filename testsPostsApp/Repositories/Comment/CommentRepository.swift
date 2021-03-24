@@ -13,7 +13,6 @@ private enum CommentAPIEndpoint {
 
 protocol CommentRepositoryLogic {
   func getComments(completion: @escaping(Result<[CommentEntity], GetCommentsError>) -> Void)
-  func getCommentsByPostId(postId: Int, completion: @escaping([CommentEntity]) -> Void)
 }
 
 class CommentRepository: CommentRepositoryLogic {
@@ -60,15 +59,6 @@ class CommentRepository: CommentRepositoryLogic {
         }
       }
     }
-  }
-
-  func getCommentsByPostId(postId: Int, completion: @escaping([CommentEntity]) -> Void) {
-    guard let comments = try? Managers.database.get(CommentObject.self,
-                                                    filter: NSPredicate(format: "postId == %@", postId)) else {
-      completion([])
-      return
-    }
-    completion(comments.compactMap({ $0.convertToEntity() }))
   }
 
   // MARK: - Private
