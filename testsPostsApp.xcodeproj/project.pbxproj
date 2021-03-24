@@ -24,6 +24,18 @@
 		46053CE72609674700A23D8F /* FirstScreenModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46053CE12609674700A23D8F /* FirstScreenModels.swift */; };
 		46053CE82609674700A23D8F /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46053CE22609674700A23D8F /* FirstScreenViewController.swift */; };
 		46053CE92609674700A23D8F /* FirstScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46053CE32609674700A23D8F /* FirstScreenInteractor.swift */; };
+		46086ED6260B4DEC0021ECA8 /* PostDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46086ED0260B4DEC0021ECA8 /* PostDetailsPresenter.swift */; };
+		46086ED8260B4DEC0021ECA8 /* PostDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46086ED2260B4DEC0021ECA8 /* PostDetailsRouter.swift */; };
+		46086ED9260B4DEC0021ECA8 /* PostDetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46086ED3260B4DEC0021ECA8 /* PostDetailsModels.swift */; };
+		46086EDA260B4DEC0021ECA8 /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46086ED4260B4DEC0021ECA8 /* PostDetailsViewController.swift */; };
+		46086EDB260B4DEC0021ECA8 /* PostDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46086ED5260B4DEC0021ECA8 /* PostDetailsInteractor.swift */; };
+		46086EE1260B505D0021ECA8 /* PostDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46086EE0260B505D0021ECA8 /* PostDetailsView.swift */; };
+		46086EE5260B56540021ECA8 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46086EE4260B56540021ECA8 /* PostView.swift */; };
+		46086EEB260B65570021ECA8 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46086EEA260B65570021ECA8 /* CommentTableViewCell.swift */; };
+		46086EEF260B6BBD0021ECA8 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46086EEE260B6BBD0021ECA8 /* CommentView.swift */; };
+		46086EF5260B72EC0021ECA8 /* SimpleTitleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46086EF4260B72EC0021ECA8 /* SimpleTitleHeaderView.swift */; };
+		46086EFB260B76160021ECA8 /* PostDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46086EFA260B76160021ECA8 /* PostDetailsHeaderView.swift */; };
+		46086EFF260B7F9A0021ECA8 /* CloseBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46086EFE260B7F9A0021ECA8 /* CloseBarButtonItem.swift */; };
 		463A79AF2609E5FB0099F422 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 463A79AE2609E5FB0099F422 /* Colors.xcassets */; };
 		463A79BE2609E7020099F422 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A79BD2609E7020099F422 /* UIColor.swift */; };
 		463A79C32609E7750099F422 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A79C22609E7750099F422 /* Collection.swift */; };
@@ -86,6 +98,18 @@
 		46053CE12609674700A23D8F /* FirstScreenModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenModels.swift; sourceTree = "<group>"; };
 		46053CE22609674700A23D8F /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
 		46053CE32609674700A23D8F /* FirstScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenInteractor.swift; sourceTree = "<group>"; };
+		46086ED0260B4DEC0021ECA8 /* PostDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsPresenter.swift; sourceTree = "<group>"; };
+		46086ED2260B4DEC0021ECA8 /* PostDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsRouter.swift; sourceTree = "<group>"; };
+		46086ED3260B4DEC0021ECA8 /* PostDetailsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsModels.swift; sourceTree = "<group>"; };
+		46086ED4260B4DEC0021ECA8 /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewController.swift; sourceTree = "<group>"; };
+		46086ED5260B4DEC0021ECA8 /* PostDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsInteractor.swift; sourceTree = "<group>"; };
+		46086EE0260B505D0021ECA8 /* PostDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsView.swift; sourceTree = "<group>"; };
+		46086EE4260B56540021ECA8 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		46086EEA260B65570021ECA8 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		46086EEE260B6BBD0021ECA8 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		46086EF4260B72EC0021ECA8 /* SimpleTitleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTitleHeaderView.swift; sourceTree = "<group>"; };
+		46086EFA260B76160021ECA8 /* PostDetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsHeaderView.swift; sourceTree = "<group>"; };
+		46086EFE260B7F9A0021ECA8 /* CloseBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseBarButtonItem.swift; sourceTree = "<group>"; };
 		463A79AE2609E5FB0099F422 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		463A79BD2609E7020099F422 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		463A79C22609E7750099F422 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
@@ -251,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				46053CDD2609672900A23D8F /* FirstScreen */,
+				46086ECF260B4DCC0021ECA8 /* PostDetails */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -266,6 +291,19 @@
 				463A79C62609E9000099F422 /* FirstScreenView.swift */,
 			);
 			path = FirstScreen;
+			sourceTree = "<group>";
+		};
+		46086ECF260B4DCC0021ECA8 /* PostDetails */ = {
+			isa = PBXGroup;
+			children = (
+				46086ED0260B4DEC0021ECA8 /* PostDetailsPresenter.swift */,
+				46086ED2260B4DEC0021ECA8 /* PostDetailsRouter.swift */,
+				46086ED3260B4DEC0021ECA8 /* PostDetailsModels.swift */,
+				46086ED4260B4DEC0021ECA8 /* PostDetailsViewController.swift */,
+				46086ED5260B4DEC0021ECA8 /* PostDetailsInteractor.swift */,
+				46086EE0260B505D0021ECA8 /* PostDetailsView.swift */,
+			);
+			path = PostDetails;
 			sourceTree = "<group>";
 		};
 		463A79BB2609E6E10099F422 /* Extensions */ = {
@@ -299,7 +337,12 @@
 			isa = PBXGroup;
 			children = (
 				463A79DB2609F2D50099F422 /* Cells */,
+				46086EFE260B7F9A0021ECA8 /* CloseBarButtonItem.swift */,
+				46086EEE260B6BBD0021ECA8 /* CommentView.swift */,
 				463A79CB2609EC530099F422 /* LoaderView.swift */,
+				46086EFA260B76160021ECA8 /* PostDetailsHeaderView.swift */,
+				46086EE4260B56540021ECA8 /* PostView.swift */,
+				46086EF4260B72EC0021ECA8 /* SimpleTitleHeaderView.swift */,
 				463A79D32609ED2A0099F422 /* ScreenLoadErrorView.swift */,
 			);
 			path = Views;
@@ -317,6 +360,7 @@
 			isa = PBXGroup;
 			children = (
 				463A79DC2609F2F20099F422 /* PostTableViewCell.swift */,
+				46086EEA260B65570021ECA8 /* CommentTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -616,17 +660,24 @@
 				463A7A0B260A478F0099F422 /* PostObject.swift in Sources */,
 				463A7A31260A5B9C0099F422 /* UserObject.swift in Sources */,
 				46053CCC2609651600A23D8F /* NetworkManager.swift in Sources */,
+				46086EEB260B65570021ECA8 /* CommentTableViewCell.swift in Sources */,
+				46086ED6260B4DEC0021ECA8 /* PostDetailsPresenter.swift in Sources */,
 				46053CD8260965D100A23D8F /* Colors.swift in Sources */,
 				463A7A02260A2FF90099F422 /* DatabaseManager.swift in Sources */,
 				46053CCD2609651600A23D8F /* NetworkConfig.swift in Sources */,
 				463A79EE2609F81F0099F422 /* PostDataModels.swift in Sources */,
 				463A7A06260A3D820099F422 /* DatabaseError.swift in Sources */,
+				46086EDA260B4DEC0021ECA8 /* PostDetailsViewController.swift in Sources */,
 				463A7A2D260A5AFD0099F422 /* UserEntities.swift in Sources */,
+				46086ED9260B4DEC0021ECA8 /* PostDetailsModels.swift in Sources */,
 				46053CCF2609651600A23D8F /* NetworkResponse.swift in Sources */,
 				463A79BE2609E7020099F422 /* UIColor.swift in Sources */,
+				46086EFF260B7F9A0021ECA8 /* CloseBarButtonItem.swift in Sources */,
 				463A7A36260A5C580099F422 /* UserRepository.swift in Sources */,
+				46086EE1260B505D0021ECA8 /* PostDetailsView.swift in Sources */,
 				463A79E62609F74F0099F422 /* PostEntities.swift in Sources */,
 				463A79E12609F3720099F422 /* UITableViewCell.swift in Sources */,
+				46086EEF260B6BBD0021ECA8 /* CommentView.swift in Sources */,
 				463A7A20260A51E90099F422 /* Repositories.swift in Sources */,
 				463A7A45260A5E080099F422 /* CommentDataModels.swift in Sources */,
 				46053CCB2609651600A23D8F /* NetworkError.swift in Sources */,
@@ -634,9 +685,12 @@
 				463A79C72609E9000099F422 /* FirstScreenView.swift in Sources */,
 				463A79C32609E7750099F422 /* Collection.swift in Sources */,
 				46053CCE2609651600A23D8F /* NetworkRequest.swift in Sources */,
+				46086EF5260B72EC0021ECA8 /* SimpleTitleHeaderView.swift in Sources */,
 				46053CE42609674700A23D8F /* FirstScreenPresenter.swift in Sources */,
 				46053CE72609674700A23D8F /* FirstScreenModels.swift in Sources */,
+				46086EE5260B56540021ECA8 /* PostView.swift in Sources */,
 				46053C622609570000A23D8F /* AppDelegate.swift in Sources */,
+				46086EFB260B76160021ECA8 /* PostDetailsHeaderView.swift in Sources */,
 				463A79D02609EC7B0099F422 /* UIView.swift in Sources */,
 				463A79DD2609F2F20099F422 /* PostTableViewCell.swift in Sources */,
 				463A7A4D260A5E2D0099F422 /* CommentEntities.swift in Sources */,
@@ -646,9 +700,11 @@
 				463A7A41260A5DEF0099F422 /* CommentRepository.swift in Sources */,
 				463A7A3A260A5C6A0099F422 /* UserDataModels.swift in Sources */,
 				46053CE62609674700A23D8F /* FirstScreenRouter.swift in Sources */,
+				46086EDB260B4DEC0021ECA8 /* PostDetailsInteractor.swift in Sources */,
 				463A7A49260A5E1C0099F422 /* CommentObject.swift in Sources */,
 				463A79F22609F82E0099F422 /* PostRepository.swift in Sources */,
 				463A79D42609ED2A0099F422 /* ScreenLoadErrorView.swift in Sources */,
+				46086ED8260B4DEC0021ECA8 /* PostDetailsRouter.swift in Sources */,
 				46053CE92609674700A23D8F /* FirstScreenInteractor.swift in Sources */,
 				463A79CC2609EC530099F422 /* LoaderView.swift in Sources */,
 			);

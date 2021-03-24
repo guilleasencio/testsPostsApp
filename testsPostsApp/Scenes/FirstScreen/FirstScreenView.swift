@@ -22,7 +22,7 @@ class FirstScreenView: UIView {
 
     // Sizes
     static let loaderSize: CGFloat = 50.0
-    static let estimatedRowHeight: CGFloat = 75.0
+    static let estimatedRowHeight: CGFloat = 150.0
   }
 
   // MARK: - Properties
@@ -83,6 +83,7 @@ class FirstScreenView: UIView {
     tableView.estimatedRowHeight = ViewTraits.estimatedRowHeight
     tableView.separatorStyle = .none
     tableView.contentInset = ViewTraits.contentInset
+    tableView.allowsSelection = true
     tableView.register(PostTableViewCell.self,
                        forCellReuseIdentifier: PostTableViewCell.reuseIdentifier)
 

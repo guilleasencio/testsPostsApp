@@ -9,6 +9,7 @@ import UIKit
 
 protocol FirstScreenDisplayLogic: class {
   func displayData(viewModel: FirstScreen.Data.ViewModel)
+  func displaySelectPost(viewModel: FirstScreen.SelectPost.ViewModel)
 }
 
 class FirstScreenViewController: UIViewController, FirstScreenDisplayLogic {
@@ -66,7 +67,8 @@ class FirstScreenViewController: UIViewController, FirstScreenDisplayLogic {
   // MARK: - Private
 
   private func setupNavigationBar() {
-    navigationController?.setNavigationBarHidden(true, animated: false)
+    navigationController?.setNavigationBarHidden(false, animated: false)
+    navigationItem.title = "Post list"
   }
 
   private func setupComponents() {
@@ -80,10 +82,19 @@ class FirstScreenViewController: UIViewController, FirstScreenDisplayLogic {
     interactor?.doLoadData(request: request)
   }
 
+  func doSelectPost(index: Int) {
+    let request = FirstScreen.SelectPost.Request(index: index)
+    interactor?.doSelectPost(request: request)
+  }
+
   // MARK: - Input
 
   func displayData(viewModel: FirstScreen.Data.ViewModel) {
     sceneView.setState(state: viewModel.state)
+  }
+
+  func displaySelectPost(viewModel: FirstScreen.SelectPost.ViewModel) {
+    router?.routeToPostDetails()
   }
 }
 
@@ -92,7 +103,7 @@ class FirstScreenViewController: UIViewController, FirstScreenDisplayLogic {
 extension FirstScreenViewController: FirstScreenViewDelegate {
 
   func firstScreenViewDidTapCell(_ view: FirstScreenView, index: Int) {
-    // TODO
+    doSelectPost(index: index)
   }
 
   func firstScreenViewDidTapRetryButton(_ view: FirstScreenView) {

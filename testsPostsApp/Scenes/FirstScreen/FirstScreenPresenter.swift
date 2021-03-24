@@ -5,10 +5,11 @@
 //  Created by Guillermo Asencio Sanchez on 23/3/21.
 //
 
-import UIKit
+import Foundation
 
 protocol FirstScreenPresentationLogic {
   func presentData(response: FirstScreen.Data.Response)
+  func presentSelectPost(response: FirstScreen.SelectPost.Response)
 }
 
 class FirstScreenPresenter: FirstScreenPresentationLogic {
@@ -33,6 +34,13 @@ class FirstScreenPresenter: FirstScreenPresentationLogic {
     viewController?.displayData(viewModel: viewModel)
   }
 
+  func presentSelectPost(response: FirstScreen.SelectPost.Response) {
+    let viewModel = FirstScreen.SelectPost.ViewModel()
+    viewController?.displaySelectPost(viewModel: viewModel)
+  }
+
+  // MARK: - Private
+
   private func createTableData(posts: [PostEntity],
                                users: [UserEntity],
                                comments: [CommentEntity]) -> [PostTableViewCellData] {
@@ -43,9 +51,11 @@ class FirstScreenPresenter: FirstScreenPresentationLogic {
                                    users: [UserEntity],
                                    comments: [CommentEntity]) -> PostTableViewCellData {
     let username = users.first(where: { $0.identifier == post.userId })?.username ?? ""
-    return PostTableViewCellData(title: post.title,
-                                 body: post.body,
-                                 username: username,
-                                 totalComments: comments.filter({ $0.postId == post.identifier }).count)
+    let viewData = PostViewData(title: post.title,
+                                body: post.body,
+                                username: username,
+                                totalComments: comments.filter({ $0.postId == post.identifier }).count,
+                                hideTotalComments: false)
+    return PostTableViewCellData(viewData: viewData)
   }
 }

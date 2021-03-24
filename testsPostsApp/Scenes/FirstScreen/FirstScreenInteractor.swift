@@ -5,14 +5,17 @@
 //  Created by Guillermo Asencio Sanchez on 23/3/21.
 //
 
-import UIKit
+import Foundation
 
 protocol FirstScreenBusinessLogic {
   func doLoadData(request: FirstScreen.Data.Request)
+  func doSelectPost(request: FirstScreen.SelectPost.Request)
 }
 
 protocol FirstScreenDataStore {
-  // var name: String { get set }
+  var selectedPost: PostEntity? { get }
+  var selectedPostUser: UserEntity? { get }
+  var selectedPostComments: [CommentEntity] { get }
 }
 
 class FirstScreenInteractor: FirstScreenBusinessLogic, FirstScreenDataStore {
@@ -23,6 +26,10 @@ class FirstScreenInteractor: FirstScreenBusinessLogic, FirstScreenDataStore {
   var postsRepository: PostRepositoryLogic?
   var userRepository: UserRepositoryLogic?
   var commentRepository: CommentRepositoryLogic?
+
+  private(set) var selectedPost: PostEntity?
+  private(set) var selectedPostUser: UserEntity?
+  private(set) var selectedPostComments: [CommentEntity] = []
 
   private let group = DispatchGroup()
 
@@ -54,6 +61,19 @@ class FirstScreenInteractor: FirstScreenBusinessLogic, FirstScreenDataStore {
         self.presenter?.presentData(response: response)
       }
     }
+  }
+
+  func doSelectPost(request: FirstScreen.SelectPost.Request) {
+    guard let post = posts[safe: request.index] else {
+      return
+    }
+
+    self.selectedPost = post
+    self.selectedPostUser = users.first(where: { $0.identifier == post.userId })
+    self.selectedPostComments = comments.filter({ $0.postId == post.identifier })
+
+    let response = FirstScreen.SelectPost.Response()
+    self.presenter?.presentSelectPost(response: response)
   }
 
   // MARK: - Private

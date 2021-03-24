@@ -5,11 +5,11 @@
 //  Created by Guillermo Asencio Sanchez on 23/3/21.
 //
 
-import UIKit
+import Foundation
+
+// MARK: Use cases
 
 enum FirstScreen {
-  // MARK: Use cases
-
   enum Data {
     struct Request {
     }
