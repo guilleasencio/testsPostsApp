@@ -40,7 +40,7 @@ enum FirstScreen {
 
 enum FirstScreenState {
   case loading
-  case posts(data: [PostEntity])
+  case success(posts: [PostEntity], users: [UserEntity], comments: [CommentEntity])
   case error
 }
 

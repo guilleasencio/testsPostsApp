@@ -24,8 +24,8 @@ class FirstScreenPresenter: FirstScreenPresentationLogic {
     switch response.state {
     case .loading:
       state = .loading
-    case .posts(let data):
-      state = .sucess(cellData: createTableData(data: data))
+    case .success(let posts, let users, let comments):
+      state = .sucess(cellData: createTableData(posts: posts, users: users, comments: comments))
     case .error:
       state = .error
     }
@@ -33,11 +33,19 @@ class FirstScreenPresenter: FirstScreenPresentationLogic {
     viewController?.displayData(viewModel: viewModel)
   }
 
-  private func createTableData(data: [PostEntity]) -> [PostTableViewCellData] {
-    data.map({ createTableCellData(data: $0) })
+  private func createTableData(posts: [PostEntity],
+                               users: [UserEntity],
+                               comments: [CommentEntity]) -> [PostTableViewCellData] {
+    posts.map({ createTableCellData(post: $0, users: users, comments: comments) })
   }
 
-  private func createTableCellData(data: PostEntity) -> PostTableViewCellData {
-    PostTableViewCellData(title: data.title, body: data.body)
+  private func createTableCellData(post: PostEntity,
+                                   users: [UserEntity],
+                                   comments: [CommentEntity]) -> PostTableViewCellData {
+    let username = users.first(where: { $0.identifier == post.userId })?.username ?? ""
+    return PostTableViewCellData(title: post.title,
+                                 body: post.body,
+                                 username: username,
+                                 totalComments: comments.filter({ $0.postId == post.identifier }).count)
   }
 }
