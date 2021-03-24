@@ -1,0 +1,7 @@
+input_dir: testsPostsApp
+output_dir: testsPostsApp/Constants
+xcassets:
+  - inputs: Resources/Colors.xcassets
+    outputs:
+      - templatePath: swiftgen/colors.stencil
+        output: Colors.swift

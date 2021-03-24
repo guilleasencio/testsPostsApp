@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (5.4.1)
+  - Realm (10.7.2):
+    - Realm/Headers (= 10.7.2)
+  - Realm/Headers (10.7.2)
+  - RealmSwift (10.7.2):
+    - Realm (= 10.7.2)
+  - SwiftGen (6.4.0)
+  - SwiftLint (0.43.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - RealmSwift
+  - SwiftGen
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - Realm
+    - RealmSwift
+    - SwiftGen
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  Realm: e523da9ade306c5ae87e85dc09fdef148d3e1cc1
+  RealmSwift: 4f6758c3adbdcc87f7b7777107226532a077f61c
+  SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
+  SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
+
+PODFILE CHECKSUM: 8e1386b538a5833d0f742ed6edc45baa3fd19aba
+
+COCOAPODS: 1.10.1
